@@ -1,0 +1,54 @@
+{
+  "name": "ecommerce-teamplate",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prisma-push": "prisma db push",
+    "prisma-seed": "prisma db seed",
+    "prisma-gen": "prisma generate",
+    "prisma-studio": "prisma studio"
+  },
+  "prisma": {
+    "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} ./prisma/seed.ts"
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  },
+  "dependencies": {
+    "@apollo/client": "^3.7.3",
+    "@auth0/nextjs-auth0": "^2.0.1",
+    "@next/font": "13.1.1",
+    "@prisma/client": "^4.8.0",
+    "@types/node": "18.11.18",
+    "@types/react": "18.0.26",
+    "@types/react-dom": "18.0.10",
+    "apollo-server-micro": "^3.11.1",
+    "aws-sdk": "^2.1287.0",
+    "eslint": "8.30.0",
+    "eslint-config-next": "13.1.1",
+    "graphql": "^16.6.0",
+    "micro": "^10.0.1",
+    "micro-cors": "^0.1.1",
+    "next": "13.1.1",
+    "nexus": "^1.3.0",
+    "phosphor-react": "^1.4.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.41.3",
+    "react-hot-toast": "^2.4.0",
+    "typescript": "4.9.4"
+  },
+  "devDependencies": {
+    "@types/micro-cors": "^0.1.2",
+    "postcss-preset-env": "^7.8.3",
+    "prisma": "^4.8.0",
+    "tailwindcss": "^3.2.4",
+    "ts-node": "^10.9.1"
+  }
+}
